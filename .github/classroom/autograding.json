@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "compile",
+      "setup": "",
+      "run": "make",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "sword equip fight",
+      "setup": "",
+      "run": "./adventureList",
+      "input": "Erin\r\n1\r\n1\r\n1\r\n1\r\n2\r\n1",
+      "output": "Erin: 10\r\nFingernail of Doom sword\r\nAttack damage: 10\r\nParry block: 5\r\nWall of Ice shield: 6\r\n\r\nBad Guy!: 6\r\nHellfire sword\r\nAttack damage: 9\r\nParry block: 4\r\n\r\n\r\nYou're winning!\r\nThe orc takes 6 and you take 3 damage!\r\nErin: 7\r\nFingernail of Doom sword\r\nAttack damage: 10\r\nParry block: 5\r\nWall of Ice shield: 6\r\n\r\nBad Guy!: 0\r\nHellfire sword\r\nAttack damage: 9\r\nParry block: 4\r\n\r\nYou vanquish the loathsome ogre with sword and shield!!",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
