@@ -1,7 +1,7 @@
 adventureList: driver.o hero.o character.o sword.o shield.o ogre.o
 	g++ -o adventureList driver.o hero.o character.o sword.o shield.o ogre.o
 
-driver.o: driver.cpp hero.h sword.h ogre.h
+driver.o: driver.cpp linkedlist.h hero.h sword.h ogre.h
 	g++ -c driver.cpp
 
 hero.o: hero.cpp hero.h shield.h character.h

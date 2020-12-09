@@ -12,9 +12,7 @@ class LinkedList : public ListInterface<ItemType>{
 public:
 	//constructors
 	LinkedList();
-	LinkedList(const LinkedList<ItemType>& aList);\
-	//deconstructor
-	virtual ~LinkedList();
+	LinkedList(const LinkedList<ItemType>& aList);
 	//functions
 	bool isEmpty() const;
 	int getLength() const;
@@ -23,6 +21,8 @@ public:
 	void clear();
 	ItemType getEntry(int position) const;
 	ItemType replace(int position, const ItemType& newEntry);
+	//deconstructor
+	virtual ~LinkedList();
 };
 #include "linkedlist.cpp"
 #endif

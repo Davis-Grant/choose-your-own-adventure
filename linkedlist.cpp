@@ -1,3 +1,4 @@
+//constructors
 template<class ItemType>
 Node<ItemType>* LinkedList<ItemType>::getNodeAt(int position) const
 {
@@ -10,26 +11,22 @@ Node<ItemType>* LinkedList<ItemType>::getNodeAt(int position) const
 	}
 	return nullptr;
 } 
-
 template<class ItemType>
 LinkedList<ItemType>::LinkedList() : headPtr(nullptr), itemCount(0){}
-
 template<class ItemType>
 LinkedList<ItemType>::LinkedList(const LinkedList<ItemType>& aList){
 	headPtr = aList.headPtr;
 	itemCount = aList.itemCount;
 }
-
+//functions
 template<class ItemType>
 bool LinkedList<ItemType>::isEmpty() const{
 	return itemCount == 0;
 }
-
 template<class ItemType>
 int LinkedList<ItemType>::getLength() const{
 	return itemCount;
 }
-
 template<class ItemType>
 bool LinkedList<ItemType>::insert(int newPosition, const ItemType& newEntry){
 	bool ableToInsert = (newPosition >= 1) && (newPosition <= itemCount + 1);
@@ -48,7 +45,6 @@ bool LinkedList<ItemType>::insert(int newPosition, const ItemType& newEntry){
 	} 
 	return ableToInsert;
 }
-
 template<class ItemType>
 bool LinkedList<ItemType>::remove(int position){
 	bool ableToRemove = (position >= 1) && (position <= itemCount);
@@ -72,14 +68,12 @@ bool LinkedList<ItemType>::remove(int position){
 	return ableToRemove;
 
 }
-
 template<class ItemType>
 void LinkedList<ItemType>::clear(){
 	while(!isEmpty()){
 		remove(1);
 	}
 }
-
 template<class ItemType>
 ItemType LinkedList<ItemType>::getEntry(int position) const {
 	bool ableToGet = (position >= 1) && (position <= itemCount);

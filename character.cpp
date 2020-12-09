@@ -11,7 +11,6 @@ Character::Character(const Character& rhs){
 	health = rhs.health;
 	sword = rhs.sword;
 }
-//getters
 string Character::getName() const{
 	return name;
 }
@@ -21,7 +20,6 @@ int Character::getHealth() const{
 bool Character::hasSword() const{
 	return swords.getLength() > 0;
 }
-//setters
 void Character::addHealth(int newHealth){
 	health += newHealth;
 }
@@ -30,6 +28,10 @@ void Character::takeHit(int newHealth){
 }
 void Character::addSword(Sword newSword){
 	swords.insert(1, newSword);
+	equipSword();
+}
+void Character::addSecondSword(Sword secondSword){
+	swords.insert(2, secondSword);
 	equipSword();
 }
 void Character::equipSword(){

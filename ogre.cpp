@@ -20,6 +20,5 @@ int Ogre::block(int damage){
 ostream& operator<<(ostream& out, const Ogre& ogre){
 	out << ogre.name << ": " << ogre.health << endl;
 	out << ogre.sword << endl;
-
 	return out;
 }

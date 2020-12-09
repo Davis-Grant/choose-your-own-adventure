@@ -27,6 +27,7 @@ public:
 	void addHealth(int);
 	void takeHit(int);
 	void addSword(Sword);
+	void addSecondSword(Sword);
 	void equipSword();
 	//combat
 	virtual int attack() = 0;

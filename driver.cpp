@@ -94,7 +94,7 @@ void rock(Hero& hero){
 		cout << endl << "You found the \"" << nailName << "\" sword!" << endl;
 		cout << "It causes " << nailDamage << " damage when striking and can block " << nailParry << " damage when parrying." << endl;
 		
-		hero.addSword(nail);
+		hero.addSecondSword(nail);
 	}
 	else if(userChoice == 2){
 		cout << endl << "While passing the rock, you stumble and scrape your knee. Lose a health point." << endl;
