@@ -139,11 +139,11 @@ void ogre(Hero& hero){
 }
 
 void fight(Hero& hero, Ogre& ogre){
-	int userChoice, bardDamage, orcDamage;
+	int userChoice, heroDamage, orcDamage;
 	cout << hero << endl << ogre << endl;
 
 	do{
-		bardDamage = hero.block(ogre.attack());
+		heroDamage = hero.block(ogre.attack());
 		orcDamage = ogre.block(hero.attack());
 
 		if(hero.hasSword() && !hero.hasShield()){
@@ -156,7 +156,7 @@ void fight(Hero& hero, Ogre& ogre){
 			cout << endl << "You're winning!" << endl;
 		}
 
-		cout << "The ogre takes " << orcDamage << " and you take " << bardDamage << " damage!" << endl;
+		cout << "The ogre takes " << orcDamage << " and you take " << heroDamage << " damage!" << endl;
 		cout << hero << endl << ogre << endl;
 	}while(hero.getHealth() > 0 && ogre.getHealth() > 0);
 }

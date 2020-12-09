@@ -91,7 +91,6 @@ ItemType LinkedList<ItemType>::getEntry(int position) const {
 
 template<class ItemType>
 ItemType LinkedList<ItemType>::replace(int position, const ItemType& newEntry){
-	// enforce precondition
 	bool ableToGet = (position >= 1) && (position <= itemCount);
 	if (ableToGet){
 		Node<ItemType>* nodePtr = getNodeAt(position);

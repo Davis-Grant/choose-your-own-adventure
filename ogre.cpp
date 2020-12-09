@@ -19,8 +19,7 @@ int Ogre::block(int damage){
 //operator overload
 ostream& operator<<(ostream& out, const Ogre& ogre){
 	out << ogre.name << ": " << ogre.health << endl;
-	if(ogre.hasSword()){
-		out << ogre.sword << endl;
-	}
+	out << ogre.sword << endl;
+
 	return out;
 }
